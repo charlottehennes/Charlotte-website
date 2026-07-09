@@ -1,0 +1,753 @@
+/* ---------- Grundeinstellungen ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#F8F5F1;
+
+    color:#5E5047;
+
+}
+
+
+/* ---------- Navigation ---------- */
+
+nav{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:30px 90px;
+
+    background:#F8F5F1;
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    font-size:24px;
+
+    font-weight:600;
+
+    color:#8A7265;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:45px;
+
+}
+
+nav ul li a{
+
+    text-decoration:none;
+
+    color:#5E5047;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:#C6A98E;
+
+}
+
+
+/* ---------- Startseite ---------- */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:120px 90px;
+
+}
+
+.hero-left{
+
+    width:50%;
+
+}
+
+.hero-right{
+
+    width:40%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+/* ---------- Texte ---------- */
+
+.welcome{
+
+    color:#BCA391;
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+    margin-bottom:20px;
+
+}
+
+h1{
+
+    font-size:70px;
+
+    line-height:1.1;
+
+    margin-bottom:15px;
+
+}
+
+h2{
+
+    font-size:28px;
+
+    font-weight:400;
+
+    margin-bottom:35px;
+
+    color:#8B7668;
+
+}
+
+.subtitle{
+
+    font-size:23px;
+
+    line-height:1.9;
+
+    margin-bottom:45px;
+
+}
+
+
+/* ---------- Buttons ---------- */
+
+.buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.primary{
+
+    background:#D9BEA5;
+
+    color:white;
+
+    padding:16px 34px;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.primary:hover{
+
+    background:#C8A488;
+
+}
+
+.secondary{
+    background: #D9BEA5;
+    color: white;
+    padding: 16px 34px;
+    border-radius: 14px;
+    text-decoration: none;
+    transition: .3s;
+    border: none;
+    display: inline-block;
+}
+
+.secondary:hover{
+    background: #C8A488;
+}
+
+
+/* ---------- Bild ---------- */
+
+/* -------- Bild -------- */
+
+.image{
+    width: 470px;
+    height: 620px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+padding:160px 30px 60px;
+
+}
+
+.hero-left{
+
+width:100%;
+
+}
+
+.hero-right{
+
+width:100%;
+
+margin-top:50px;
+
+}
+
+.buttons{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+nav{
+
+padding:25px;
+
+}
+
+nav ul{
+
+gap:20px;
+
+}
+
+h1{
+
+font-size:48px;
+
+}
+
+}
+/* ---------- Über mich ---------- */
+
+.about{
+
+    padding:120px 10px;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.about-text{
+
+    max-width:850px;
+
+}
+
+.small-title{
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    color:#B59B8A;
+
+    font-size:14px;
+
+    margin-bottom:20px;
+
+}
+
+.about h2{
+
+    font-size:52px;
+
+    line-height:1.2;
+
+    color:#5E5047;
+
+    margin-bottom:35px;
+
+}
+
+.about-description{
+
+    font-size:20px;
+
+    line-height:2;
+
+    color:#6F625B;
+
+}
+/* ---------- Erfahrung ---------- */
+
+.experience{
+    padding:100px 10%;
+    background:#fcf8f5;
+}
+
+.timeline{
+    margin-top:50px;
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.timeline-item{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.timeline-item h3{
+    color:#d4ab8a;
+    margin-bottom:10px;
+}
+
+.timeline-item h4{
+    color:#3b2f2f;
+    margin-bottom:10px;
+}
+
+.timeline-item p{
+    color:#666;
+    line-height:1.7;
+}
+/* ---------- Kompetenzen ---------- */
+
+.skills{
+    padding:180px 90px 120px;
+    background:#F8F5F1;
+}
+.skills-grid{
+
+    margin-top:50px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.skill-card{
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:35px 20px;
+
+    text-align:center;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.06);
+
+    transition:0.3s ease;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.10);
+
+}
+
+.skill-card span{
+
+    font-size:34px;
+
+    display:block;
+
+    margin-bottom:18px;
+
+}
+
+.skill-card p{
+
+    font-size:18px;
+
+    color:#5E5047;
+
+    font-weight:500;
+
+}
+/* ---------------- Kontakt ---------------- */
+
+.contact{
+
+    padding:140px 90px;
+
+    text-align:center;
+
+    background:white;
+
+}
+
+.contact h2{
+
+    font-size:42px;
+
+    margin:20px 0;
+
+    color:#5E5047;
+
+}
+
+.contact-text{
+
+    max-width:700px;
+
+    margin:0 auto 60px;
+
+    color:#7C6E66;
+
+    line-height:1.8;
+
+}
+
+.contact-box{
+
+    max-width:600px;
+
+    margin:auto;
+
+    background:#F8F5F1;
+
+    padding:50px;
+
+    border-radius:30px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
+
+}
+
+.contact-box p{
+
+    margin-bottom:30px;
+
+    color:#5E5047;
+
+    line-height:1.7;
+
+}
+
+.contact-button{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    padding:16px 34px;
+
+    background:#D9BEA5;
+
+    color:white;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.contact-button:hover{
+
+    background:#C9A98D;
+
+}
+/* ---------- Video Popup ---------- */
+
+.modal{
+    display:none;
+    position:fixed;
+    z-index:999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.75);
+
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    position:relative;
+    width:70%;
+    max-width:700px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.modal-content video{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+
+.close{
+    position:absolute;
+    top:15px;
+    right:20px;
+    font-size:35px;
+    color:white;
+    cursor:pointer;
+    z-index:1000;
+}
+
+.close:hover{
+
+transform:scale(1.2);
+
+}
+.profile-card{
+
+    width:420px;
+    height:560px;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.profile-card img,
+.profile-card video{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+}
+
+.profile-card img{
+
+    transition:.5s;
+
+}
+
+.profile-card video{
+
+    display:none;
+
+}
+#profileImage{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+#profileVideo{
+    display:none;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+/* ========================= */
+/* Responsive Handy */
+/* ========================= */
+
+@media screen and (max-width:768px){
+
+nav{
+
+    flex-direction:column;
+    padding:20px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+
+}
+
+.hero{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+    padding:50px 25px;
+
+    gap:40px;
+
+}
+
+.hero-left{
+
+    width:100%;
+
+}
+
+.hero-left h1{
+
+    font-size:42px;
+
+}
+
+.hero-left p{
+
+    font-size:18px;
+
+}
+
+.profile-card{
+
+    width:280px;
+
+    height:380px;
+
+    margin:auto;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    align-items:center;
+
+}
+
+.primary,
+.secondary{
+
+    width:280px;
+
+    text-align:center;
+
+}
+
+.about,
+.experience,
+.skills,
+.contact{
+
+    padding:80px 25px;
+
+}
+
+.about h2,
+.experience h2,
+.skills h2,
+.contact h2{
+
+    font-size:34px;
+
+}
+
+.skills-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.timeline{
+
+    gap:20px;
+
+}
+
+.contact-box{
+
+    padding:25px;
+
+}
+
+}
+/* Bilder auf allen Geräten korrekt skalieren */
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/* Videos auf allen Geräten korrekt skalieren */
+video{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
